@@ -12,18 +12,14 @@
         <title>Molobela Web & Tech</title>
         
 
-        <!-- Critical inline CSS to reduce first paint delay and avoid theme flash -->
+        <!-- Minimal critical CSS to reduce first paint delay and avoid theme flash -->
         <style>
-            /* Keep first paint close to final design to minimize FOUC */
-            *{box-sizing:border-box}
+            /* First-screen shell only; full details come from CSS/style.css */
             html,body{margin:0;padding:0;background:#121212;color:#ffffff;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif}
             .navbar{display:flex;justify-content:space-between;align-items:center;padding:10px 20px;background:rgba(15,15,15,.92);position:sticky;top:0;z-index:1000}
             .logo img{max-width:150px;height:auto;display:block}
             .hero{padding:110px 20px 95px;text-align:center;max-width:900px;margin:auto;min-height:50vh;display:flex;flex-direction:column;justify-content:center;align-items:center}
             .hero-main{background:radial-gradient(circle at top,#2a2a2a 0%,#121212 60%);min-height:70vh}
-            .hero h1{font-size:clamp(32px,5vw,50px);line-height:1.15;margin:0 0 20px}
-            .hero p{color:#bdbdbd;max-width:700px;margin:0 0 40px}
-            .btn{padding:14px 30px;border-radius:999px;text-decoration:none;display:inline-block}
         </style>
 
         <!-- LocalBusiness JSON-LD -->
