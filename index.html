@@ -69,18 +69,77 @@
 
     <!-- HOME SECTION / HERO -->
     <section id="home" class="hero hero-main">
-        <h1>Clean, Modern Websites That Help Businesses Get More Customers</h1>
-        <p>
-            Molobela Web & Tech designs professional, mobile-friendly websites 
-            that help businesses stand out and attract more customers.
-        </p>
+        <div class="hero-shapes" aria-hidden="true">
+            <span class="shape shape-orb"></span>
+            <span class="shape shape-cube"></span>
+            <span class="shape shape-ring"></span>
+        </div>
 
-        <div class="hero-buttons">
-            <a href="#services" class="btn primary">Get a Website</a>
-            <a href="https://wa.me/27607568573" 
-            class="btn secondary" 
-            target="_blank">
-            WhatsApp Us</a>
+        <div class="hero-grid">
+            <div class="hero-copy">
+                <p class="hero-kicker">Web Design Studio | South Africa</p>
+
+                <h1>Clean, Modern Websites That Help Businesses Get More Customers</h1>
+                <p>
+                    Molobela Web & Tech designs professional, mobile-friendly websites
+                    built to help businesses stand out, build trust, and turn visitors into real enquiries.
+                </p>
+
+                <div class="hero-buttons">
+                    <a href="#services" class="btn primary">Explore Packages</a>
+                    <a href="https://wa.me/27607568573"
+                    class="btn secondary"
+                    target="_blank">
+                    Talk on WhatsApp</a>
+                </div>
+
+                <div class="hero-proof" aria-label="Business highlights">
+                    <span>Mobile-First</span>
+                    <span>SEO Ready</span>
+                    <span>Fast Delivery</span>
+                </div>
+            </div>
+
+            <aside class="hero-showcase" aria-label="Website quality highlights">
+                <div class="showcase-window">
+                    <div class="showcase-topbar">
+                        <span></span><span></span><span></span>
+                    </div>
+                    <div class="showcase-body">
+                        <p class="showcase-label">Design Snapshot</p>
+                        <h3>Website Built for Growth</h3>
+                        <ul>
+                            <li>Fast page speed and clean structure</li>
+                            <li>Modern layout with strong brand presence</li>
+                            <li>Clear contact path that drives leads</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="hero-metrics" aria-label="Key metrics">
+                    <div>
+                        <strong>2-4 Weeks</strong>
+                        <span>Delivery Timeline</span>
+                    </div>
+                    <div>
+                        <strong>100% Responsive</strong>
+                        <span>All Devices</span>
+                    </div>
+                    <div>
+                        <strong>Ongoing Support</strong>
+                        <span>After Launch</span>
+                    </div>
+                </div>
+            </aside>
+        </div>
+
+        <div class="hero-trustline" aria-label="Service promise">
+            <span>Professional websites for businesses ready to grow online.</span>
+        </div>
+
+        <div class="hero-scroll-cue" aria-hidden="true">
+            <span></span>
+            <small>Scroll</small>
         </div>
     </section>
 
@@ -124,38 +183,53 @@
     <!-- ABOUT SECTION -->
     <section id="about" class="about">
         <div class="about-content">
-            <h2>About Molobela Web & Tech</h2>
-            <p>
-                We are a modern web & technology company focused on helping 
-                businesses build a strong and professional online presence.
-            </p>
+            <div class="about-intro-card">
+                <p class="about-eyebrow">Who We Are</p>
+                <h2>About Molobela Web & Tech</h2>
+                <p class="about-lead">
+                    We are a modern web and technology company focused on helping businesses build a
+                    strong and professional online presence.
+                </p>
+                <div class="about-pill-row" aria-label="Company strengths">
+                    <span>Modern Design</span>
+                    <span>Business Focused</span>
+                    <span>Results Driven</span>
+                </div>
+            </div>
 
-            <h3>Who We Are</h3>
-            <p>
-                Molobela Web & Tech was founded with one goal in mind: 
-                to help businesses grow through clean, modern, and effective websites.
-            </p>
+            <div class="about-grid">
+                <article class="about-block">
+                    <h3>Our Story</h3>
+                    <p>
+                        Molobela Web & Tech was founded with one goal in mind: to help businesses
+                        grow through clean, modern, and effective websites.
+                    </p>
+                    <p>
+                        We believe a website should not just look good, but also work for the business.
+                        Our focus is on simplicity, performance, and real results.
+                    </p>
+                </article>
 
-            <p>
-                We believe a website should not just look good, but also work for the business.
-                Our focus is on simplicity, performance, and real results.
-            </p>
+                <article class="about-block">
+                    <h3>Our Mission</h3>
+                    <p>
+                        To provide professional, affordable web solutions that help businesses stand
+                        out online and connect with more customers.
+                    </p>
+                </article>
+            </div>
 
-            <h3>Our Mission</h3>
-            <p>
-                To provide professional, affordable web solutions that help businesses
-                stand out online and connect with more customers.
-            </p>
-
-            <h3>Why Choose Us</h3>
-            <ul>
-                <li>Modern and clean designs</li>
-                <li>Mobile-friendly websites</li>
-                <li>Clear communication</li>
-                <li>Fast turnaround time</li>
-                <li>Simple and honest pricing</li>
-                <li>Ongoing support and maintenance</li>
-            </ul>
+            <div class="about-values">
+                <h3>Why Choose Us</h3>
+                <ul class="about-list">
+                    <li>Modern and clean designs</li>
+                    <li>Mobile-friendly websites</li>
+                    <li>Clear communication</li>
+                    <li>Fast turnaround time</li>
+                    <li>Simple and honest pricing</li>
+                    <li>Ongoing support and maintenance</li>
+                </ul>
+            </div>
         </div>
     </section>
 
@@ -195,7 +269,8 @@
         <h2>Website Packages</h2>
 
         <div class="service-cards">
-            <div class="card">
+            <div class="card package-card package-starter">
+                <p class="plan-badge">Starter Plan</p>
                 <h3>Starter Website</h3>
                 <p>
                     A clean, professional website ideal for small businesses starting their online presence.
@@ -212,11 +287,13 @@
                         
                     </ul>
                 </div>
+                <p class="plan-note">Best for new businesses that need a strong online start.</p>
                 <p class="price"><strong>From R2,000</strong></p>
-                <a href="#contact" class="card-btn">Order Now</a>
+                <a href="#contact" class="card-btn">Choose Starter</a>
             </div>
 
-            <div class="card">
+            <div class="card package-card package-business featured-package">
+                <p class="plan-badge">Most Popular</p>
                 <h3>Business Website</h3>
                 <p>
                     A complete multi-page website built to present your brand professionally and generate enquiries.
@@ -235,11 +312,13 @@
                         
                     </ul>
                 </div>
+                <p class="plan-note">Best for growing businesses focused on leads and credibility.</p>
                 <p class="price"><strong>From R3,500</strong></p>
-                <a href="#contact" class="card-btn">Order Now</a>
+                <a href="#contact" class="card-btn">Choose Business</a>
             </div>
 
-            <div class="card">
+            <div class="card package-card package-premium">
+                <p class="plan-badge">Premium Plan</p>
                 <h3>Premium Website</h3>
                 <p>
                     A high-end custom website for established businesses that need advanced features and room to scale.
@@ -259,8 +338,9 @@
                         
                     </ul>
                 </div>
+                <p class="plan-note">Best for brands that need advanced features and scale.</p>
                 <p class="price"><strong>From R5,000</strong></p>
-                <a href="#contact" class="card-btn">Order Now</a>
+                <a href="#contact" class="card-btn">Choose Premium</a>
             </div>
         </div>
     </section>
@@ -405,14 +485,36 @@
 
             <!-- FORM -->
             <form class="contact-form">
-                <h2>Send an Enquiry</h2>
+                <div class="form-header">
+                    <p class="form-eyebrow">Start Your Project</p>
+                    <h2>Send an Enquiry</h2>
+                    <p class="form-intro">Share your goals and we will reach out with the best next step for your business.</p>
+                </div>
 
-                <input type="text" name="name" placeholder="Your Name" required>
-                <input type="email" name="email" placeholder="Your Email" required>
-                <input type="text" name="business" placeholder="Your Business Name">
-                <textarea name="message" placeholder="Tell us about your project..." required></textarea>
+                <div class="form-grid">
+                    <label class="form-field">
+                        <span>Full Name</span>
+                        <input type="text" name="name" placeholder="e.g. Lehlogonolo Molobela" autocomplete="name" required>
+                    </label>
 
-                <button type="submit">Send via WhatsApp</button>
+                    <label class="form-field">
+                        <span>Email Address</span>
+                        <input type="email" name="email" placeholder="e.g. you@business.com" autocomplete="email" required>
+                    </label>
+
+                    <label class="form-field form-field-full">
+                        <span>Business Name</span>
+                        <input type="text" name="business" placeholder="e.g. Molobela Web & Tech" autocomplete="organization">
+                    </label>
+
+                    <label class="form-field form-field-full">
+                        <span>Project Details</span>
+                        <textarea name="message" placeholder="Tell us what you need, timeline, and your budget range..." required></textarea>
+                    </label>
+                </div>
+
+                <button type="submit" class="submit-btn">Send via WhatsApp</button>
+                <p class="form-note">By sending this form, you will be redirected to WhatsApp with your message pre-filled.</p>
 
                 <p id="form-message" class="form-message">
                     <strong>Opening WhatsApp...</strong><br>
@@ -422,28 +524,37 @@
 
             <!-- WHATSAPP -->
             <div class="contact-info">
+                <p class="contact-info-tag">Direct Support</p>
                 <h2>Contact Us Directly</h2>
-                <p>
-                    Have questions or want to discuss your project? Prefer WhatsApp? 
-                    Click below to chat with us instantly.
+                <p class="contact-info-lead">
+                    Need a quick response? Reach out directly and we will guide you to the best option for your project.
                 </p>
 
-                <a href="#contact" 
-                class="whatsapp-btn">
-                    WhatsApp / Enquiry Form
-                </a>
+                <div class="direct-actions">
+                    <a href="https://wa.me/27607568573" class="whatsapp-btn" target="_blank">
+                        Chat on WhatsApp
+                    </a>
+                    <a href="mailto:molobelalehlogonolo13@gmail.com" class="direct-email-btn">
+                        Send an Email
+                    </a>
+                </div>
+
+                <div class="direct-chips" aria-label="Direct contact details">
+                    <span>+27 (0) 60 756 8573</span>
+                    <span>Mon-Sat, 09:00-20:00</span>
+                </div>
 
                 <p class="note">
-                    We respond quickly during business hours (Monday - Saturday, 9:00 AM - 20:00 PM SAST).
+                    We usually respond quickly during business hours (Monday to Saturday, 09:00 to 20:00 SAST).
                 </p>
 
                 <div class="contact-details">
-                    <h3>Why WhatsApp?</h3>
+                    <h3>Why Contact Us Directly?</h3>
                     <ul>
                         <li>Instant communication</li>
                         <li>Quick responses</li>
                         <li>Share files and ideas easily</li>
-                        <li>More personal connection</li>
+                        <li>Clear guidance on packages and next steps</li>
                     </ul>
                 </div>
             </div>
@@ -453,42 +564,58 @@
 
     <!-- CONTACT INFO SECTION -->
     <section class="contact-info-section">
-        <h2>Get in Touch</h2>
-        <p class="section-intro">Have questions? Reach out to us through any of these channels</p>
+        <div class="contact-intro-panel">
+            <p class="contact-tag">Let's Talk</p>
+            <h2>Get in Touch</h2>
+            <p class="section-intro">Have questions? Reach out through your preferred channel and we will respond quickly.</p>
+            <div class="contact-quick-pills" aria-label="Support highlights">
+                <span>Response Within 24h</span>
+                <span>Business Hours: Mon-Sat</span>
+                <span>Remote Nationwide</span>
+            </div>
+        </div>
         
         <div class="contact-info-cards">
-            <div class="info-card">
+            <div class="info-card info-email">
                 <div class="info-icon">📧</div>
                 <h3>Email</h3>
-                <p><a href="mailto:molobelalehlogonolo13@gmail.com">molobelalehlogonolo13@gmail.com</a></p>
+                <p class="info-main"><a href="mailto:molobelalehlogonolo13@gmail.com">molobelalehlogonolo13@gmail.com</a></p>
+                <p class="info-sub">Best for detailed project requirements and formal enquiries.</p>
                 <span class="response-time">Response within 24 hours</span>
             </div>
 
-            <div class="info-card">
+            <div class="info-card info-whatsapp">
                 <div class="info-icon">📱</div>
                 <h3>WhatsApp</h3>
-                <p><a href="https://wa.me/27607568573">+27 (0) 60 756 8573</a></p>
+                <p class="info-main"><a href="https://wa.me/27607568573">+27 (0) 60 756 8573</a></p>
+                <p class="info-sub">Best for quick chats, voice notes, and fast updates.</p>
                 <span class="response-time">Instant messaging</span>
             </div>
 
-            <div class="info-card">
+            <div class="info-card info-hours">
                 <div class="info-icon">⏰</div>
                 <h3>Business Hours</h3>
-                <p>Monday - Saturday<br>9:00 AM - 20:00 PM SAST</p>
+                <p class="info-main">Monday - Saturday<br>9:00 AM - 20:00 PM SAST</p>
+                <p class="info-sub">Messages outside business hours are answered the next working period.</p>
                 <span class="response-time">Same-day response</span>
             </div>
 
-            <div class="info-card">
+            <div class="info-card info-area">
                 <div class="info-icon">🌍</div>
                 <h3>Service Area</h3>
-                <p>South Africa<br>Remote Services</p>
+                <p class="info-main">South Africa<br>Remote Services</p>
+                <p class="info-sub">Serving clients across South Africa with fully remote delivery.</p>
                 <span class="response-time">Nationwide coverage</span>
             </div>
         </div>
 
         <div class="quick-contact-cta">
-            <p>Ready to start your project?</p>
-            <a href="https://wa.me/27607568573" class="btn primary" target="_blank">Contact Us Now</a>
+            <h3>Ready to Start Your Project?</h3>
+            <p>Choose your preferred way to reach us and we will guide you on the best package for your goals.</p>
+            <div class="quick-contact-actions">
+                <a href="https://wa.me/27607568573" class="btn primary" target="_blank">Chat on WhatsApp</a>
+                <a href="#contact" class="btn secondary">Open Enquiry Form</a>
+            </div>
         </div>
     </section>
 
