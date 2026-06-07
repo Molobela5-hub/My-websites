@@ -1,739 +1,407 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="description" content="Molobela Web & Tech provides fast, modern, and affordable websites for businesses.">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    
-        
-        <link rel="preload" href="CSS/style.css" as="style">
-        <link rel="stylesheet" href="CSS/style.css">
-        <link rel="icon" type="image/png" href="Favicon/favicon.png">
-        <title>Molobela Web & Tech</title>
-        
-
-        <!-- Minimal critical CSS to reduce first paint delay and avoid theme flash -->
-        <style>
-            /* First-screen shell only; full details come from CSS/style.css */
-            html,body{margin:0;padding:0;background:#121212;color:#ffffff;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif}
-            .navbar{display:flex;justify-content:space-between;align-items:center;padding:10px 20px;background:rgba(15,15,15,.92);position:sticky;top:0;z-index:1000}
-            .logo img{max-width:150px;height:auto;display:block}
-            .hero{padding:110px 20px 95px;text-align:center;max-width:900px;margin:auto;min-height:50vh;display:flex;flex-direction:column;justify-content:center;align-items:center}
-            .hero-main{background:radial-gradient(circle at top,#2a2a2a 0%,#121212 60%);min-height:70vh}
-        </style>
-
-        <!-- LocalBusiness JSON-LD -->
-        <script type="application/ld+json">
-        {
-            "@context": "https://schema.org",
-            "@type": "LocalBusiness",
-            "name": "Molobela Web & Tech",
-            "image": "IMG/Logo.png",
-            "telephone": "+27607568573",
-            "email": "molobelalehlogonolo13@gmail.com",
-            "address": {
-                "@type": "PostalAddress",
-                "addressCountry": "ZA"
-            },
-            "url": "https://www.molobelatech.com/",
-            "priceRange": "R400-R1200/month or R1500-R12000 (one-time + recurring)",
-            "openingHours": "Mo-Sat 09:00-20:00"
-        }
-        </script>
-
-    
-
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Molobela Web &amp; Tech | Premium Website Agency</title>
+  <meta name="description" content="Molobela Web &amp; Tech creates clean, modern websites, online stores, and booking systems for businesses that want more leads and stronger online trust.">
+  <meta name="theme-color" content="#08090b">
+  <meta property="og:title" content="Molobela Web &amp; Tech | Premium Website Agency">
+  <meta property="og:description" content="Clean, modern websites, online stores, and booking systems for businesses that want more leads and stronger online trust.">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="IMG/Cover%20IMG.png">
+  <link rel="icon" type="image/png" href="Favicon/favicon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Playwrite+US+Modern:wght@300;400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="CSS/styles.css">
 </head>
 <body>
+  <header class="site-header" data-header>
+    <a class="brand" href="#top" aria-label="Molobela Web &amp; Tech home">
+      <img src="IMG/Logo.png" alt="Molobela Web &amp; Tech logo">
+    </a>
+    <button class="nav-toggle" type="button" aria-label="Open menu" aria-expanded="false" data-nav-toggle>
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+    <nav class="site-nav" data-nav>
+      <a href="#work">What you get</a>
+      <a href="#services">Services</a>
+      <a href="#portfolio">Portfolio</a>
+      <a href="#process">How it works</a>
+      <a href="#pricing">Packages</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <a class="header-action" href="#contact">Request a quote</a>
+  </header>
 
-    <!-- NAVBAR -->
-    <header class="navbar">
-        <div class="logo">
-            <a href="#home">
-                 <img src="IMG/Logo.png" alt="Molobela Web & Tech Logo" height="100" width="150" loading="lazy" class="responsive-logo"
-                     srcset="IMG/Logo.png 1x" sizes="(max-width: 600px) 120px, 150px">
-            </a>
+  <main id="top">
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="hero-media" aria-hidden="true"></div>
+      <div class="hero-overlay" aria-hidden="true"></div>
+      <div class="hero-inner">
+        <p class="eyebrow">Molobela Web &amp; Tech website agency</p>
+        <h1 id="hero-title">Clean, modern websites that help your business get more customers.</h1>
+        <p class="hero-copy">We create websites, online stores, and booking systems that make your brand look trusted, clear, and ready for real enquiries.</p>
+        <div class="hero-actions">
+          <a class="button button-primary" href="#contact">Get a website quote</a>
+          <a class="button button-secondary" href="#services">See what we build</a>
         </div>
-        <button class="hamburger" id="hamburger" aria-controls="navMenu" aria-expanded="false" aria-label="Toggle navigation">
-            <span></span>
-            <span></span>
-            <span></span>
-        </button>
-        <nav class="nav-menu" id="navMenu" role="navigation">
-            <a href="#home">Home</a>
-            <a href="#about">About</a>
-            <a href="#services">Services</a>
-            <a href="#contact">Contact</a>
-        </nav>
-    </header>
-
-    <!-- HOME SECTION / HERO -->
-    <section id="home" class="hero hero-main">
-        <div class="hero-shapes" aria-hidden="true">
-            <span class="shape shape-orb"></span>
-            <span class="shape shape-cube"></span>
-            <span class="shape shape-ring"></span>
+        <div class="hero-proof" aria-label="Agency highlights">
+          <div>
+            <strong>7-21 days</strong>
+            <span>Most client websites launch in this range</span>
+          </div>
+          <div>
+            <strong>Phone friendly</strong>
+            <span>Your website looks sharp on every screen</span>
+          </div>
+          <div>
+            <strong>Easy to find</strong>
+            <span>Built with clear structure for Google</span>
+          </div>
         </div>
-
-        <div class="hero-grid">
-            <div class="hero-copy">
-                <p class="hero-kicker">Web Design Studio | South Africa</p>
-
-                <h1>Clean, Modern Websites That Help Businesses Get More Customers</h1>
-                <p>
-                    Molobela Web & Tech designs professional, mobile-friendly websites
-                    built to help businesses stand out, build trust, and turn visitors into real enquiries.
-                </p>
-
-                <div class="hero-buttons">
-                    <a href="#services" class="btn primary">Explore Packages</a>
-                    <a href="https://wa.me/27607568573"
-                    class="btn secondary"
-                    target="_blank">
-                    Talk on WhatsApp</a>
-                </div>
-
-                <div class="hero-proof" aria-label="Business highlights">
-                    <span>Mobile-First</span>
-                    <span>SEO Ready</span>
-                    <span>Fast Delivery</span>
-                </div>
-            </div>
-
-            <aside class="hero-showcase" aria-label="Website quality highlights">
-                <div class="showcase-window">
-                    <div class="showcase-topbar">
-                        <span></span><span></span><span></span>
-                    </div>
-                    <div class="showcase-body">
-                        <p class="showcase-label">Design Snapshot</p>
-                        <h3>Website Built for Growth</h3>
-                        <ul>
-                            <li>Fast page speed and clean structure</li>
-                            <li>Modern layout with strong brand presence</li>
-                            <li>Clear contact path that drives leads</li>
-                        </ul>
-                    </div>
-                </div>
-
-                <div class="hero-metrics" aria-label="Key metrics">
-                    <div>
-                        <strong>2-4 Weeks</strong>
-                        <span>Delivery Timeline</span>
-                    </div>
-                    <div>
-                        <strong>100% Responsive</strong>
-                        <span>All Devices</span>
-                    </div>
-                    <div>
-                        <strong>Ongoing Support</strong>
-                        <span>After Launch</span>
-                    </div>
-                </div>
-            </aside>
-        </div>
-
-        <div class="hero-trustline" aria-label="Service promise">
-            <span>Professional websites for businesses ready to grow online.</span>
-        </div>
-
-        <div class="hero-scroll-cue" aria-hidden="true">
-            <span></span>
-            <small>Scroll</small>
-        </div>
+      </div>
+      <a class="scroll-cue" href="#work" aria-label="Scroll to next section">
+        <span>Scroll to next</span>
+        <span class="scroll-cue-arrow" aria-hidden="true"></span>
+      </a>
     </section>
 
-    <!-- HOW IT WORKS SECTION -->
-    <section class="how-it-works">
-        <h2>How to Get Started</h2>
-        <p class="intro-text">Follow these simple steps to get your business online:</p>
-        
-        <div class="steps-container">
-            <div class="step">
-                <div class="step-number">1</div>
-                <h3>Explore Services</h3>
-                <p>Browse our website packages and additional services to see what fits your needs.</p>
-            </div>
-
-            <div class="step">
-                <div class="step-number">2</div>
-                <h3>Learn About Us</h3>
-                <p>Check out our mission and why businesses trust us to build their online presence.</p>
-            </div>
-
-            <div class="step">
-                <div class="step-number">3</div>
-                <h3>Contact Us</h3>
-                <p>Fill out the contact form or WhatsApp us with your project details and budget.</p>
-            </div>
-
-            <div class="step">
-                <div class="step-number">4</div>
-                <h3>Get Your Website</h3>
-                <p>We'll design, build, and launch your professional website in 2-4 weeks.</p>
-            </div>
-        </div>
-
-        <div class="cta-section">
-            <p>Ready to get started?</p>
-            <a href="#services" class="btn primary">View Packages</a>
-        </div>
+    <section class="section intro-band" id="work">
+      <div class="section-heading">
+        <p class="eyebrow">What you get</p>
+        <h2>Everything your website needs to turn visitors into enquiries.</h2>
+      </div>
+      <div class="capability-grid">
+        <article class="capability-card">
+          <span class="card-index">01</span>
+          <h3>Clear message</h3>
+          <p>We shape your content so visitors quickly understand what you offer, why it matters, and how to contact you.</p>
+        </article>
+        <article class="capability-card featured-card">
+          <span class="card-index">02</span>
+          <h3>Premium design</h3>
+          <p>Your website will feel professional, modern, and credible before a client reads every detail.</p>
+        </article>
+        <article class="capability-card">
+          <span class="card-index">03</span>
+          <h3>Simple next steps</h3>
+          <p>We add WhatsApp, forms, booking buttons, payment links, or product enquiries where clients expect them.</p>
+        </article>
+      </div>
     </section>
 
-    <!-- ABOUT SECTION -->
-    <section id="about" class="about">
-        <div class="about-content">
-            <div class="about-intro-card">
-                <p class="about-eyebrow">Who We Are</p>
-                <h2>About Molobela Web & Tech</h2>
-                <p class="about-lead">
-                    We are a modern web and technology company focused on helping businesses build a
-                    strong and professional online presence.
-                </p>
-                <div class="about-pill-row" aria-label="Company strengths">
-                    <span>Modern Design</span>
-                    <span>Business Focused</span>
-                    <span>Results Driven</span>
-                </div>
-            </div>
-
-            <div class="about-grid">
-                <article class="about-block">
-                    <h3>Our Story</h3>
-                    <p>
-                        Molobela Web & Tech was founded with one goal in mind: to help businesses
-                        grow through clean, modern, and effective websites.
-                    </p>
-                    <p>
-                        We believe a website should not just look good, but also work for the business.
-                        Our focus is on simplicity, performance, and real results.
-                    </p>
-                </article>
-
-                <article class="about-block">
-                    <h3>Our Mission</h3>
-                    <p>
-                        To provide professional, affordable web solutions that help businesses stand
-                        out online and connect with more customers.
-                    </p>
-                </article>
-            </div>
-
-            <div class="about-values">
-                <h3>Why Choose Us</h3>
-                <ul class="about-list">
-                    <li>Modern and clean designs</li>
-                    <li>Mobile-friendly websites</li>
-                    <li>Clear communication</li>
-                    <li>Fast turnaround time</li>
-                    <li>Simple and honest pricing</li>
-                    <li>Ongoing support and maintenance</li>
-                </ul>
-            </div>
+    <section class="section split-section">
+      <div class="split-content">
+        <p class="eyebrow">Why it matters</p>
+        <h2>Your website is often the first proof that your business is serious.</h2>
+        <p>Before people call, book, or buy, they look for signs that they can trust you. We build websites that answer their questions and guide them to the next step.</p>
+        <div class="mini-metrics">
+          <div><strong>Fast</strong><span>Clean pages that load quickly and keep people moving.</span></div>
+          <div><strong>Flexible</strong><span>Start with a website, then add store, booking, or extra pages later.</span></div>
         </div>
+      </div>
+      <div class="studio-panel" aria-label="Project snapshot">
+        <div class="panel-topline">
+          <span>Project snapshot</span>
+          <strong>Molobela Build</strong>
+        </div>
+        <div class="progress-list">
+          <div><span>Business goals</span><strong>Defined</strong></div>
+          <div><span>Website layout</span><strong>Designed</strong></div>
+          <div><span>Contact flow</span><strong>Connected</strong></div>
+          <div><span>Launch checks</span><strong>Queued</strong></div>
+        </div>
+        <div class="panel-cta">
+          <span>Next available project slot</span>
+          <strong>This month</strong>
+        </div>
+      </div>
     </section>
 
-    <!-- SERVICES SECTION -->
-    <section id="services" class="services">
-        <h2>What We Do</h2>
-
-        <div class="service-cards">
-            <div class="card">
-                <h3>Business Websites</h3>
-                <p>Professional websites for small and growing businesses.</p>
-                <a href="#contact" class="card-btn">Get Started</a>
-            </div>
-
-            <div class="card">
-                <h3>Landing Pages</h3>
-                <p>Single-page websites focused on converting visitors and driving sales.</p>
-                <a href="#contact" class="card-btn">Get Started</a>
-            </div>
-
-            <div class="card">
-                <h3>Website Redesign</h3>
-                <p>Upgrade your old website with a modern look and improved performance.</p>
-                <a href="#contact" class="card-btn">Get Started</a>
-            </div>
-
-            <div class="card">
-                <h3>Website Maintenance</h3>
-                <p>We keep your website updated, secure, and running smoothly.</p>
-                <a href="#contact" class="card-btn">Get Started</a>
-            </div>
-        </div>
+    <section class="section services-section" id="services">
+      <div class="section-heading">
+        <p class="eyebrow">Services</p>
+        <h2>Choose what you need built for your business.</h2>
+      </div>
+      <div class="service-grid">
+        <article class="service-card">
+          <span class="service-kicker">Get enquiries</span>
+          <h3>Business websites</h3>
+          <p>For service businesses, personal brands, and companies that need people to understand the offer and get in touch.</p>
+          <ul>
+            <li>Homepage and inner pages</li>
+            <li>WhatsApp or contact form</li>
+            <li>Works well on mobile</li>
+          </ul>
+        </article>
+        <article class="service-card">
+          <span class="service-kicker">Show products</span>
+          <h3>Online stores</h3>
+          <p>For brands that need to present products clearly, build buyer confidence, and support orders or enquiries.</p>
+          <ul>
+            <li>Product collections</li>
+            <li>Payment or order enquiry setup</li>
+            <li>Clear product information</li>
+          </ul>
+        </article>
+        <article class="service-card">
+          <span class="service-kicker">Take bookings</span>
+          <h3>Booking systems</h3>
+          <p>For businesses that want clients to request appointments, quotes, consultations, or services without confusion.</p>
+          <ul>
+            <li>Service menus</li>
+            <li>Client details captured clearly</li>
+            <li>Calendar or WhatsApp-ready flow</li>
+          </ul>
+        </article>
+        <article class="service-card">
+          <span class="service-kicker">Look better</span>
+          <h3>Website redesigns</h3>
+          <p>For older websites that need a cleaner look, stronger message, better mobile experience, and easier contact paths.</p>
+          <ul>
+            <li>Visual redesign</li>
+            <li>Content restructuring</li>
+            <li>Speed and mobile cleanup</li>
+          </ul>
+        </article>
+      </div>
     </section>
 
-    <!-- PRICING SECTION -->
-    <section class="services packages-section">
-        <h2>Website Packages</h2>
-
-        <div class="service-cards">
-            <div class="card package-card package-starter">
-                <p class="plan-badge">Starter Plan</p>
-                <h3>Starter Website</h3>
-                <p>
-                    A clean, professional website to get your business online quickly and affordably.
-                </p>
-                <div class="package-features">
-                    <p><strong>What you get:</strong></p>
-                    <ul>
-                        <li>3 pages - (e.g. Home, Services &amp; Contact)</li>
-                        <li>Looks great on phones, tablets &amp; computers</li>
-                        <li>Contact form so customers can reach you</li>
-                        <li>WhatsApp button so customers can message you instantly</li>
-                        <li>Your business set up to appear on Google</li>
-                        <li>Links to your social media pages</li>
-                        
-                    </ul>
-                </div>
-                <p class="plan-note">Best for new businesses that need a strong online start.</p>
-                <p class="price"><strong>From R2,000</strong></p>
-                <a href="#contact" class="card-btn">Choose Starter</a>
-            </div>
-
-            <div class="card package-card package-business featured-package">
-                <p class="plan-badge">Most popular</p>
-                <h3>Business Website</h3>
-                <p>
-                    A complete multi-page website built to present your brand professionally and bring in more customers.
-                </p>
-                <div class="package-features">
-                    <p><strong>What you get:</strong></p>
-                    <ul>
-                        <li>4-7 pages (e.g. Home, About, Services, Contact)</li>
-                        <li>A modern design that matches your brand</li>
-                        <li>Works perfectly on all devices - phone, tablet, desktop</li>
-                        <li>Enquiry forms to capture customer leads</li>
-                        <li>WhatsApp &amp; email buttons for easy contact</li>
-                        <li>Set up so Google can find and rank your site</li>
-                        <li>Links to all your social media profiles</li>
-                        
-                    </ul>
-                </div>
-                <p class="plan-note">Best for growing businesses focused on leads and credibility.</p>
-                <p class="price"><strong>From R3,500</strong></p>
-                <a href="#contact" class="card-btn">Choose Business</a>
-            </div>
-
-            <div class="card package-card package-premium">
-                <p class="plan-badge">Premium plan</p>
-                <h3>Premium Website</h3>
-                <p>
-                    A high-end custom website for established businesses that need advanced features and room to grow.
-                </p>
-                <div class="package-features">
-                    <p><strong>What you get:</strong></p>
-                    <ul>
-                        <li>7-10 professionally designed pages</li>
-                        <li>A fully custom design built around your brand</li>
-                        <li>Fully optimised to look flawless on any device</li>
-                        <li>Advanced Google setup so more people find you</li>
-                        <li>Accept payments directly on your site (if needed)</li>
-                        <li>See how many people visit your site and what they do</li>
-                        <li>Built to grow with your business over time</li>
-                        
-                        
-                    </ul>
-                </div>
-                <p class="plan-note">Best for brands that need advanced features and scale.</p>
-                <p class="price"><strong>From R5,000</strong></p>
-                <a href="#contact" class="card-btn">Choose Premium</a>
-            </div>
+    <section class="section process-section" id="process">
+      <div class="section-heading">
+        <p class="eyebrow">How it works</p>
+        <h2>A clear process from first idea to launched website.</h2>
+      </div>
+      <div class="timeline">
+        <div class="timeline-item">
+          <span>01</span>
+          <h3>Share your goal</h3>
+          <p>We learn what your business offers, who you serve, and what the website must help you achieve.</p>
         </div>
+        <div class="timeline-item">
+          <span>02</span>
+          <h3>Plan the experience</h3>
+          <p>We map the pages, sections, content, and calls to action your visitors need to see.</p>
+        </div>
+        <div class="timeline-item">
+          <span>03</span>
+          <h3>Design and build</h3>
+          <p>We create the site, refine the details, and check the experience on desktop and mobile.</p>
+        </div>
+        <div class="timeline-item">
+          <span>04</span>
+          <h3>Launch with confidence</h3>
+          <p>We review links, forms, page details, and contact paths before the website goes live.</p>
+        </div>
+      </div>
     </section>
 
-    <!-- ADDITIONAL SERVICES SECTION -->
-    <section class="services">
-        <h2>Additional Services</h2>
-
-        <div class="service-cards">
-            <div class="card">
-                <h3>Landing Pages</h3>
-                <p>Perfect for promotions, ads, or single service offerings.</p>
-                <p class="price"><strong>From R1,500</strong></p>
-                <a href="#contact" class="card-btn">Get Started</a>
+    <section class="section portfolio-section" id="portfolio">
+      <div class="section-heading">
+        <p class="eyebrow">Portfolio</p>
+        <h2>Demo portfolio website styles we can build for your business.</h2>
+      </div>
+      <div class="portfolio-grid">
+        <article class="portfolio-card">
+          <div class="portfolio-preview">
+            <span>Demo Service Business</span>
+          </div>
+          <div class="portfolio-content">
+            <p class="portfolio-type">Demo Business Website</p>
+            <h3>Demo Project 01: Glow Beauty Studio</h3>
+            <p>This demo concept shows a clean brand-first website focused on trust, services, and quick WhatsApp booking enquiries.</p>
+            <ul>
+              <li>Elegant homepage hero and offer sections</li>
+              <li>Service list with clear pricing highlights</li>
+              <li>Fast mobile-first booking CTA flow</li>
+            </ul>
+            <div class="portfolio-actions">
+              <a class="button button-primary" href="demo-beauty.html">Open demo project</a>
+              <a class="portfolio-inline-link" href="demo-beauty.html">View Demo Project 01</a>
             </div>
-
-            <div class="card">
-                <h3>E-Commerce Integration</h3>
-                <p>Sell products online with integrated payment systems and inventory management.</p>
-                <p class="price"><strong>From R6,000</strong></p>
-                <a href="#contact" class="card-btn">Get Started</a>
+          </div>
+        </article>
+        <article class="portfolio-card">
+          <div class="portfolio-preview portfolio-preview-store">
+            <span>Demo Online Store</span>
+          </div>
+          <div class="portfolio-content">
+            <p class="portfolio-type">Demo Ecommerce Website</p>
+            <h3>Demo Project 02: Urban Thread Co.</h3>
+            <p>This demo concept shows a premium product layout designed to make collections easy to browse and products easier to buy.</p>
+            <ul>
+              <li>Featured collections and product categories</li>
+              <li>Product pages with trust-building details</li>
+              <li>Checkout and order flow ready to scale</li>
+            </ul>
+            <div class="portfolio-actions">
+              <a class="button button-primary" href="demo-store.html">Open demo project</a>
+              <a class="portfolio-inline-link" href="demo-store.html">View Demo Project 02</a>
             </div>
-
-            <div class="card">
-                <h3>Website Optimization</h3>
-                <p>Improve your website's speed, SEO, and overall performance.</p>
-                <p class="price"><strong>From R1,500</strong></p>
-                <a href="#contact" class="card-btn">Get Started</a>
+          </div>
+        </article>
+        <article class="portfolio-card">
+          <div class="portfolio-preview portfolio-preview-booking">
+            <span>Demo Bookings</span>
+          </div>
+          <div class="portfolio-content">
+            <p class="portfolio-type">Demo Booking Website</p>
+            <h3>Demo Project 03: Prime Auto Care</h3>
+            <p>This demo concept shows a conversion-focused site that helps visitors understand packages and request appointments quickly.</p>
+            <ul>
+              <li>Service packages with comparison blocks</li>
+              <li>Simple appointment request journey</li>
+              <li>Integrated WhatsApp and contact options</li>
+            </ul>
+            <div class="portfolio-actions">
+              <a class="button button-primary" href="demo-booking.html">Open demo project</a>
+              <a class="portfolio-inline-link" href="demo-booking.html">View Demo Project 03</a>
             </div>
-
-            <div class="card">
-                <h3>Domain & Hosting</h3>
-                <p>We handle all technical setup so you can focus on your business.</p>
-                <p class="price"><strong>From R400/month</strong></p>
-                <a href="#contact" class="card-btn">Get Started</a>
-            </div>
-        </div>
+          </div>
+        </article>
+      </div>
     </section>
 
-    <!-- MAINTENANCE & SUPPORT SECTION -->
-    <section class="services">
-        <h2>Ongoing Support & Maintenance</h2>
-        <p class="section-intro">Keep your website secure, updated, and running smoothly after launch</p>
-
-        <div class="service-cards">
-            <div class="card">
-                <p class="plan-badge">Basic plan</p>
-                <h3>Basic Maintenance</h3>
-                <p>We keep your website safe, up to date, and running smoothly every month.</p>
-                <div class="package-features">
-                    <p><strong>What you get:</strong></p>
-                    <ul>
-                        <li>We keep your site safe and protected every month</li>
-                        <li>Up to 2 content changes per month (text, images, etc.)</li>
-                        <li>We make sure your site loads fast at all times</li>
-                        <li>Your site is backed up so nothing is ever lost</li>
-                        <li>Email support when you need help</li>
-                        <li>We respond to any issues within 24 hours</li>
-                    </ul>
-                </div>
-                <p class="plan-note">Best for small businesses that just want peace of mind.</p>
-                <p class="price"><strong>R450/month</strong></p>
-                <p class="price"><strong>or R4,300/year - save R1,100</strong></p>
-                <a href="#contact" class="card-btn">Get started</a>
-            </div>
-
-            <div class="card">
-                <p class="plan-badge">Most popular</p>
-                <h3>Growth Support</h3>
-                <p>Everything in Basic, plus active work to grow your visibility on Google and keep your content fresh.</p>
-                <div class="package-features">
-                    <p><strong>What you get:</strong></p>
-                    <ul>
-                        <li>Everything in the Basic plan</li>
-                        <li>Monthly work to improve your Google ranking</li>
-                        <li>Your social media pages linked and kept current</li>
-                        <li>Monthly report showing how your site is performing</li>
-                        <li>Up to 5 content changes per month</li>
-                        <li>Faster priority email support</li>
-                    </ul>
-                </div>
-                <p class="plan-note">Best for businesses that want to grow their online presence.</p>
-                <p class="price"><strong>R750/month</strong></p>
-                <p class="price"><strong>or R7,500/year - save R1,500</strong></p>
-                <a href="#contact" class="card-btn">Get started</a>
-            </div>
-
-            <div class="card">
-                <p class="plan-badge">Premium plan</p>
-                <h3>Premium Support</h3>
-                <p>A fully managed service where we handle everything - so you can focus on running your business.</p>
-                <div class="package-features">
-                    <p><strong>What you get:</strong></p>
-                    <ul>
-                        <li>Everything in the Growth plan</li>
-                        <li>Unlimited content changes whenever you need them</li>
-                        <li>We actively work to get you higher on Google</li>
-                        <li>Monthly call to plan and grow your online strategy</li>
-                        <li>Dedicated WhatsApp line for fast communication</li>
-                        <li>24-hour response guarantee on all requests</li>
-                    </ul>
-                </div>
-                <p class="plan-note">Best for established businesses that want full support.</p>
-                <p class="price"><strong>R1,200/month</strong></p>
-                <p class="price"><strong>or R12,000/year - save R2,400</strong></p>
-                <a href="#contact" class="card-btn">Get started</a>
-            </div>
-        </div>
+    <section class="section pricing-section" id="pricing">
+      <div class="section-heading">
+        <p class="eyebrow">Packages</p>
+        <h2>Pick the package that matches the stage of your business.</h2>
+      </div>
+      <div class="pricing-grid">
+        <article class="price-card">
+          <p class="package-label">Starter</p>
+          <h3>Starter Website</h3>
+          <p>Best for a new business that needs a clean, trusted online presence fast.</p>
+          <ul>
+            <li>One-page professional website</li>
+            <li>Works on phones and laptops</li>
+            <li>WhatsApp contact button</li>
+            <li>Basic Google-ready setup</li>
+          </ul>
+          <a href="#contact">Ask for this package</a>
+        </article>
+        <article class="price-card price-card-featured">
+          <p class="package-label">Most requested</p>
+          <span class="value-badge">Best value</span>
+          <h3>Business Website</h3>
+          <p>Best for a growing business that needs more pages, stronger trust, and better enquiry flow.</p>
+          <ul>
+            <li>Multiple website pages</li>
+            <li>Custom look and layout</li>
+            <li>Enquiry or booking flow</li>
+            <li>Speed and Google-ready basics</li>
+          </ul>
+          <a href="#contact">Ask for this package</a>
+        </article>
+        <article class="price-card">
+          <p class="package-label">Advanced</p>
+          <h3>Store or Booking Website</h3>
+          <p>Best for businesses that need products, bookings, payments, enquiries, or a more advanced website flow.</p>
+          <ul>
+            <li>Store or booking planning</li>
+            <li>Products, services, or appointments</li>
+            <li>Useful integrations</li>
+            <li>Launch guidance</li>
+          </ul>
+          <a href="#contact">Ask for this package</a>
+        </article>
+      </div>
     </section>
 
-    <!-- FAQ SECTION -->
-    <section class="faq">
-        <h2>Frequently Asked Questions</h2>
-        
-        <div class="faq-content">
-            <div class="faq-item">
-                <h4>How long does it take to build a website?</h4>
-                <p>Most websites take 2-4 weeks to complete, depending on complexity and requirements. We keep you updated throughout the process.</p>
-            </div>
-
-            <div class="faq-item">
-                <h4>Do I own my website?</h4>
-                <p>Yes, absolutely. You own everything. We provide you with full access to the domain, hosting, and all files.</p>
-            </div>
-
-            <div class="faq-item">
-                <h4>Can you help me with updates after launch?</h4>
-                <p>Yes! We offer ongoing maintenance and support packages to keep your website fresh and secure.</p>
-            </div>
-
-            <div class="faq-item">
-                <h4>Do you provide hosting?</h4>
-                <p>We can recommend reliable hosting providers and help with the setup, or you can use your own.</p>
-            </div>
-
-            <div class="faq-item">
-                <h4>Is the website mobile-friendly?</h4>
-                <p>All our websites are fully responsive and optimized for mobile devices, tablets, and desktops.</p>
-            </div>
-
-            <div class="faq-item">
-                <h4>What if I need to make changes?</h4>
-                <p>We provide a period of revisions after launch. Beyond that, we offer affordable update services.</p>
-            </div>
-        </div>
+    <section class="section proof-section">
+      <div class="quote-block">
+        <p>&ldquo;A good website should make people understand you, trust you, and contact you without overthinking it.&rdquo;</p>
+        <span>Molobela Web &amp; Tech website standard</span>
+      </div>
+      <div class="proof-points">
+        <div><strong>Clear wording</strong><span>Your offer is explained in simple, direct language.</span></div>
+        <div><strong>Mobile checks</strong><span>The experience is checked for phones, tablets, and laptops.</span></div>
+        <div><strong>Launch checks</strong><span>Forms, links, page details, and contact paths are reviewed.</span></div>
+      </div>
     </section>
 
-    <!-- CONTACT SECTION -->
-    <section id="contact" class="contact">
-        <div class="contact-container">
-
-            <!-- FORM -->
-            <form class="contact-form">
-                <div class="form-header">
-                    <p class="form-eyebrow">Start Your Project</p>
-                    <h2>Send an Enquiry</h2>
-                    <p class="form-intro">Share your goals and we will reach out with the best next step for your business.</p>
-                </div>
-
-                <div class="form-grid">
-                    <label class="form-field">
-                        <span>Full Name</span>
-                        <input type="text" name="name" placeholder="e.g. Lehlogonolo Molobela" autocomplete="name" required>
-                    </label>
-
-                    <label class="form-field">
-                        <span>Email Address</span>
-                        <input type="email" name="email" placeholder="e.g. you@business.com" autocomplete="email" required>
-                    </label>
-
-                    <label class="form-field form-field-full">
-                        <span>Business Name</span>
-                        <input type="text" name="business" placeholder="e.g. Molobela Web & Tech" autocomplete="organization">
-                    </label>
-
-                    <label class="form-field form-field-full">
-                        <span>Project Details</span>
-                        <textarea name="message" placeholder="Tell us what you need, timeline, and your budget range..." required></textarea>
-                    </label>
-                </div>
-
-                <button type="submit" class="submit-btn">Send via WhatsApp</button>
-                <p class="form-note">By sending this form, you will be redirected to WhatsApp with your message pre-filled.</p>
-
-                <p id="form-message" class="form-message">
-                    <strong>Opening WhatsApp...</strong><br>
-                    You'll be taken to WhatsApp to complete the message.
-                </p>
-            </form>
-
-            <!-- WHATSAPP -->
-            <div class="contact-info">
-                <p class="contact-info-tag">Direct Support</p>
-                <h2>Contact Us Directly</h2>
-                <p class="contact-info-lead">
-                    Need a quick response? Reach out directly and we will guide you to the best option for your project.
-                </p>
-
-                <div class="direct-actions">
-                    <a href="https://wa.me/27607568573" class="whatsapp-btn" target="_blank">
-                        Chat on WhatsApp
-                    </a>
-                    <a href="mailto:molobelalehlogonolo13@gmail.com" class="direct-email-btn">
-                        Send an Email
-                    </a>
-                </div>
-
-                <div class="direct-chips" aria-label="Direct contact details">
-                    <span>+27 (0) 60 756 8573</span>
-                    <span>Mon-Sat, 09:00-20:00</span>
-                </div>
-
-                <p class="note">
-                    We usually respond quickly during business hours (Monday to Saturday, 09:00 to 20:00 SAST).
-                </p>
-
-                <div class="contact-details">
-                    <h3>Why Contact Us Directly?</h3>
-                    <ul>
-                        <li>Instant communication</li>
-                        <li>Quick responses</li>
-                        <li>Share files and ideas easily</li>
-                        <li>Clear guidance on packages and next steps</li>
-                    </ul>
-                </div>
-            </div>
-
-        </div>
+    <section class="section contact-section" id="contact">
+      <div class="contact-copy">
+        <p class="eyebrow">Start your project</p>
+        <h2>Ready to make your business look better online?</h2>
+        <p>Send a short project brief through WhatsApp. We will review what you need and recommend the best website package and timeline.</p>
+      </div>
+      <form class="contact-form" data-contact-form>
+        <label>
+          <span>Name</span>
+          <input type="text" name="name" autocomplete="name" required>
+        </label>
+        <label>
+          <span>What type of business do you run?</span>
+          <input type="text" name="business" placeholder="Example: salon, agency, clothing brand" required>
+        </label>
+        <label>
+          <span>What do you need built?</span>
+          <select name="project" required>
+            <option value="">Select one</option>
+            <option>Business website</option>
+            <option>Ecommerce store</option>
+            <option>Booking system</option>
+            <option>Website redesign</option>
+            <option>Not sure yet</option>
+          </select>
+        </label>
+        <label>
+          <span>Tell us what you want the website to do</span>
+          <textarea name="details" rows="5" placeholder="Example: I need a homepage, services page, WhatsApp button, and a clean premium look." required></textarea>
+        </label>
+        <button class="button button-primary" type="submit">Send my website brief</button>
+      </form>
     </section>
+  </main>
 
-    <!-- CONTACT INFO SECTION -->
-    <section class="contact-info-section">
-        <div class="contact-intro-panel">
-            <p class="contact-tag">Let's Talk</p>
-            <h2>Get in Touch</h2>
-            <p class="section-intro">Have questions? Reach out through your preferred channel and we will respond quickly.</p>
-            <div class="contact-quick-pills" aria-label="Support highlights">
-                <span>Response Within 24h</span>
-                <span>Business Hours: Mon-Sat</span>
-                <span>Remote Nationwide</span>
-            </div>
-        </div>
-        
-        <div class="contact-info-cards">
-            <div class="info-card info-email">
-                <div class="info-icon">📧</div>
-                <h3>Email</h3>
-                <p class="info-main"><a href="mailto:molobelalehlogonolo13@gmail.com">molobelalehlogonolo13@gmail.com</a></p>
-                <p class="info-sub">Best for detailed project requirements and formal enquiries.</p>
-                <span class="response-time">Response within 24 hours</span>
-            </div>
-
-            <div class="info-card info-whatsapp">
-                <div class="info-icon">📱</div>
-                <h3>WhatsApp</h3>
-                <p class="info-main"><a href="https://wa.me/27607568573">+27 (0) 60 756 8573</a></p>
-                <p class="info-sub">Best for quick chats, voice notes, and fast updates.</p>
-                <span class="response-time">Instant messaging</span>
-            </div>
-
-            <div class="info-card info-hours">
-                <div class="info-icon">⏰</div>
-                <h3>Business Hours</h3>
-                <p class="info-main">Monday - Saturday<br>9:00 AM - 20:00 PM SAST</p>
-                <p class="info-sub">Messages outside business hours are answered the next working period.</p>
-                <span class="response-time">Same-day response</span>
-            </div>
-
-            <div class="info-card info-area">
-                <div class="info-icon">🌍</div>
-                <h3>Service Area</h3>
-                <p class="info-main">South Africa<br>Remote Services</p>
-                <p class="info-sub">Serving clients across South Africa with fully remote delivery.</p>
-                <span class="response-time">Nationwide coverage</span>
-            </div>
-        </div>
-
-        <div class="quick-contact-cta">
-            <h3>Ready to Start Your Project?</h3>
-            <p>Choose your preferred way to reach us and we will guide you on the best package for your goals.</p>
-            <div class="quick-contact-actions">
-                <a href="https://wa.me/27607568573" class="btn primary" target="_blank">Chat on WhatsApp</a>
-                <a href="#contact" class="btn secondary">Open Enquiry Form</a>
-            </div>
-        </div>
-    </section>
-
-    <!-- FOOTER -->
-    <footer class="footer">
-        <div class="footer-message">
-            <h3>Build a Strong Online Presence</h3>
-            <p>We design modern, mobile-friendly websites that help your business look professional, attract more customers, and grow with confidence.</p>
-        </div>
-
-        <div class="footer-grid">
-            <div class="footer-column">
-                <h3>Quick Links</h3>
-                <ul>
-                    <li><a href="#home">Home</a></li>
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#services">Services</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                </ul>
-            </div>
-
-            <div class="footer-column">
-                <h3>Services</h3>
-                <ul>
-                    <li><a href="#services">Business Websites</a></li>
-                    <li><a href="#services">Landing Pages</a></li>
-                    <li><a href="#services">Website Optimization</a></li>
-                    <li><a href="#services">Domain & Hosting</a></li>
-                </ul>
-            </div>
-
-            <div class="footer-column footer-contact">
-                <h3>Contact</h3>
-                <p><a href="mailto:molobelalehlogonolo13@gmail.com">molobelalehlogonolo13@gmail.com</a></p>
-                <p><a href="tel:+27607568573">+27 60 756 8573</a></p>
-                <p>Monday - Saturday<br>9:00 AM - 20:00 PM SAST</p>
-            </div>
-        </div>
-
-        <div class="footer-bottom">
-            <p>© 2026 Molobela Web & Tech. All rights reserved.</p>
-            <p class="footer-note">Building websites that help businesses grow.</p>
-        </div>
-        
-        <!-- SOCIAL MEDIA ICONS -->
-        <div class="social-icons">
-            <a href="https://wa.me/27607568573" title="WhatsApp" target="_blank" class="social-link whatsapp-icon">
-                <svg viewBox="0 0 24 24" fill="currentColor"><path d="M20.52 3.98C18.85 2.25 16.64 1.23 14.3 1.23 7.84 1.23 2.73 6.34 2.73 12.8c0 2.26.59 4.47 1.71 6.43L2.35 23l6.51-1.71c1.88 1.03 4.01 1.58 6.14 1.58 6.46 0 11.57-5.1 11.57-11.57 0-3.09-1.23-6.01-3.46-8.21l1.2-1.1zM14.3 20.9c-1.82 0-3.6-.49-5.15-1.42l-.33-.2-3.62.95.97-3.55-.23-.37c-1.1-1.75-1.68-3.78-1.68-5.86 0-5.36 4.36-9.72 9.72-9.72 2.6 0 5.04 1.01 6.88 2.85 1.84 1.84 2.85 4.28 2.85 6.88 0 5.36-4.36 9.72-9.72 9.72zm5.32-7.28c-.29-.15-1.73-.85-2-.95-.27-.1-.47-.15-.67.15-.2.3-.76.95-.93 1.15-.17.2-.34.22-.63.07-.29-.15-1.24-.46-2.36-1.46-.87-.78-1.46-1.74-1.63-2.04-.17-.3-.02-.45.13-.6.13-.13.29-.34.44-.51.15-.17.2-.29.29-.49.1-.2.05-.37-.02-.51-.07-.15-.67-1.6-.92-2.19-.24-.57-.48-.49-.67-.5-.17-.01-.36-.01-.56-.01-.2 0-.51.07-.78.37-.27.3-1.03 1.01-1.03 2.45 0 1.44 1.05 2.84 1.2 3.04.15.2 2.08 3.17 5.04 4.44.7.3 1.25.48 1.67.62.7.23 1.33.19 1.84.12.56-.08 1.74-.71 1.98-1.4.24-.69.24-1.27.17-1.39-.07-.12-.27-.19-.56-.34z"/></svg>
-            </a>
-            <a href="https://www.facebook.com/Hlogi Molobela" title="Facebook" target="_blank" class="social-link facebook-icon">
-                <svg viewBox="0 0 24 24" fill="currentColor"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
-            </a>
-            <a href="https://www.instagram.com/molobelaweb" title="Instagram" target="_blank" class="social-link instagram-icon">
-                <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C8.74 0 8.333.015 7.053.072 5.775.132 4.905.333 4.117.6c-.779.263-1.618.634-2.389 1.405-.771.771-1.141 1.61-1.405 2.389-.266.788-.468 1.659-.527 2.937C.05 8.333.035 8.74 0 12c0 3.26.015 3.667.072 4.947.06 1.277.261 2.148.528 2.936.264.78.634 1.618 1.405 2.389.771.771 1.61 1.141 2.389 1.405.787.266 1.659.468 2.937.527 1.28.058 1.687.072 4.947.072s3.667-.015 4.947-.072c1.277-.059 2.148-.261 2.936-.528.78-.264 1.618-.634 2.389-1.405.771-.771 1.141-1.61 1.405-2.389.266-.787.468-1.659.527-2.937.058-1.28.072-1.687.072-4.947s-.015-3.667-.072-4.947c-.059-1.277-.261-2.148-.528-2.936-.264-.78-.634-1.618-1.405-2.389-.771-.771-1.61-1.141-2.389-1.405-.787-.266-1.659-.468-2.937-.527C15.667.048 15.26.035 12 0zm0 2.16c3.203 0 3.585.009 4.849.070 1.171.054 1.805.244 2.227.408.562.217.96.477 1.382.896.419.42.679.819.896 1.381.164.422.352 1.056.408 2.227.061 1.264.07 1.646.07 4.849 0 3.203-.009 3.585-.07 4.849-.054 1.171-.244 1.805-.408 2.227-.217.562-.477.96-.896 1.382-.42.419-.819.679-1.381.896-.422.164-1.056.352-2.227.408-1.264.061-1.646.07-4.849.07-3.203 0-3.585-.009-4.849-.07-1.171-.054-1.805-.244-2.227-.408-.562-.217-.96-.477-1.382-.896-.419-.42-.679-.819-.896-1.381-.164-.422-.352-1.056-.408-2.227-.061-1.264-.07-1.646-.07-4.849 0-3.203.009-3.585.07-4.849.054-1.171.244-1.805.408-2.227.217-.562.477-.96.896-1.382.42-.419.819-.679 1.381-.896.422-.164 1.056-.352 2.227-.408 1.264-.061 1.646-.07 4.849-.07zM5.838 12c0-3.403 2.759-6.162 6.162-6.162 3.403 0 6.162 2.759 6.162 6.162 0 3.403-2.759 6.162-6.162 6.162-3.403 0-6.162-2.759-6.162-6.162zm1.622 0c0 2.505 2.036 4.542 4.54 4.542 2.504 0 4.542-2.036 4.542-4.542 0-2.505-2.037-4.542-4.542-4.542-2.504 0-4.54 2.036-4.54 4.542zm5.333-5.464c0 .795.645 1.44 1.44 1.44.794 0 1.44-.645 1.44-1.44-.001-.794-.646-1.439-1.44-1.439-.795 0-1.44.645-1.44 1.439z"/></svg>
-            </a>
-            <a href="https://www.tiktok.com/@molobelaweb" title="TikTok" target="_blank" class="social-link tiktok-icon">
-                <svg viewBox="0 0 24 24" fill="currentColor"><path d="M19.59 6.69a4.83 4.83 0 0 1-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 0 1-5.1 1.82 2.89 2.89 0 0 1 2.31-4.64 2.86 2.86 0 0 1 .88.13V9.4a6.84 6.84 0 0 0-1-.05A6.33 6.33 0 0 0 5 20.1a6.34 6.34 0 0 0 10.86-4.43v-7a8.16 8.16 0 0 0 4.77 1.52v-3.4a4.85 4.85 0 0 1-.44-.05z"/></svg>
-            </a>
-        </div>
-        
-    </footer>
-
-    <!-- Sticky Contact CTA (mobile) -->
-    <div class="sticky-contact" id="stickyContact" aria-hidden="true">
-        <a href="https://wa.me/27607568573" target="_blank" title="WhatsApp us">
-            <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M20.52 3.98C18.85 2.25 16.64 1.23 14.3 1.23 7.84 1.23 2.73 6.34 2.73 12.8c0 2.26.59 4.47 1.71 6.43L2.35 23l6.51-1.71c1.88 1.03 4.01 1.58 6.14 1.58 6.46 0 11.57-5.1 11.57-11.57 0-3.09-1.23-6.01-3.46-8.21l1.2-1.1zM14.3 20.9c-1.82 0-3.6-.49-5.15-1.42l-.33-.2-3.62.95.97-3.55-.23-.37c-1.1-1.75-1.68-3.78-1.68-5.86 0-5.36 4.36-9.72 9.72-9.72 2.6 0 5.04 1.01 6.88 2.85 1.84 1.84 2.85 4.28 2.85 6.88 0 5.36-4.36 9.72-9.72 9.72zm5.32-7.28c-.29-.15-1.73-.85-2-.95-.27-.1-.47-.15-.67.15-.2.3-.76.95-.93 1.15-.17.2-.34.22-.63.07-.29-.15-1.24-.46-2.36-1.46-.87-.78-1.46-1.74-1.63-2.04-.17-.3-.02-.45.13-.6.13-.13.29-.34.44-.51.15-.17.2-.29.29-.49.1-.2.05-.37-.02-.51-.07-.15-.67-1.6-.92-2.19-.24-.57-.48-.49-.67-.5-.17-.01-.36-.01-.56-.01-.2 0-.51.07-.78.37-.27.3-1.03 1.01-1.03 2.45 0 1.44 1.05 2.84 1.2 3.04.15.2 2.08 3.17 5.04 4.44.7.3 1.25.48 1.67.62.7.23 1.33.19 1.84.12.56-.08 1.74-.71 1.98-1.4.24-.69.24-1.27.17-1.39-.07-.12-.27-.19-.56-.34z"/></svg>
-            <span>WhatsApp</span>
-        </a>
+  <footer class="site-footer">
+    <div>
+      <img src="IMG/Logo.png" alt="Molobela Web &amp; Tech logo">
+      <p>Clean, modern websites, online stores, booking systems, and redesigns for businesses that want more leads online.</p>
     </div>
+    <div class="footer-links">
+      <a href="#services">Services</a>
+      <a href="#portfolio">Portfolio</a>
+      <a href="#pricing">Packages</a>
+      <a href="#contact">Contact</a>
+    </div>
+    <div class="footer-socials" aria-label="Social media links">
+      <a href="https://wa.me/+27607568573" target="_blank" rel="noopener noreferrer" aria-label="Chat with Molobela Web and Tech on WhatsApp">
+        <svg viewBox="0 0 24 24" aria-hidden="true">
+          <path d="M12.04 2.5a9.4 9.4 0 0 0-8.08 14.23L2.9 21.5l4.9-1.04A9.4 9.4 0 1 0 12.04 2.5Zm0 1.9a7.5 7.5 0 0 1 6.38 11.44 7.5 7.5 0 0 1-9.94 2.7l-.33-.18-2.78.6.6-2.69-.2-.34A7.5 7.5 0 0 1 12.04 4.4Zm-3.3 3.82c-.18 0-.47.07-.72.34-.25.27-.95.93-.95 2.26 0 1.33.98 2.62 1.12 2.8.14.18 1.89 3.03 4.7 4.12 2.34.9 2.82.72 3.33.68.51-.04 1.66-.68 1.9-1.34.23-.66.23-1.22.16-1.34-.07-.12-.25-.19-.53-.33-.28-.14-1.66-.82-1.92-.91-.26-.1-.45-.14-.64.14-.19.28-.74.91-.9 1.1-.17.19-.33.21-.61.07-.28-.14-1.19-.44-2.27-1.4-.84-.75-1.4-1.68-1.57-1.96-.16-.28-.02-.43.12-.57.13-.13.28-.33.42-.49.14-.16.19-.28.28-.47.09-.19.05-.35-.02-.49-.07-.14-.63-1.56-.88-2.13-.23-.55-.47-.56-.68-.57h-.58Z"/>
+        </svg>
+        <span>WhatsApp</span>
+      </a>
+      <a href="https://www.tiktok.com/@molobelawebtech" target="_blank" rel="noopener noreferrer" aria-label="Follow Molobela Web and Tech on TikTok">
+        <svg viewBox="0 0 24 24" aria-hidden="true">
+          <path d="M14.75 2.75h2.25c.2 1.43.9 2.66 1.98 3.54a6.7 6.7 0 0 0 2.12 1.1v2.34a8.84 8.84 0 0 1-4.2-1.36v6.96a5.93 5.93 0 1 1-5.93-5.93c.34 0 .68.03 1 .09v2.43a3.52 3.52 0 1 0 2.78 3.44V2.75Z"/>
+        </svg>
+        <span>TikTok</span>
+      </a>
+      <a href="https://www.instagram.com/molobelawebtech" target="_blank" rel="noopener noreferrer" aria-label="Follow Molobela Web and Tech on Instagram">
+        <svg viewBox="0 0 24 24" aria-hidden="true">
+          <path d="M7.8 2.75h8.4a5.06 5.06 0 0 1 5.05 5.05v8.4a5.06 5.06 0 0 1-5.05 5.05H7.8a5.06 5.06 0 0 1-5.05-5.05V7.8A5.06 5.06 0 0 1 7.8 2.75Zm8.4 1.95H7.8a3.1 3.1 0 0 0-3.1 3.1v8.4a3.1 3.1 0 0 0 3.1 3.1h8.4a3.1 3.1 0 0 0 3.1-3.1V7.8a3.1 3.1 0 0 0-3.1-3.1ZM12 7.28a4.72 4.72 0 1 1 0 9.44 4.72 4.72 0 0 1 0-9.44Zm0 1.95a2.77 2.77 0 1 0 0 5.54 2.77 2.77 0 0 0 0-5.54Zm5.02-2.23a1.1 1.1 0 1 1 0 2.2 1.1 1.1 0 0 1 0-2.2Z"/>
+        </svg>
+        <span>Instagram</span>
+      </a>
+      <a href="https://www.facebook.com/lehlogonolo.molobela.39" target="_blank" rel="noopener noreferrer" aria-label="Follow Molobela Web and Tech on Facebook">
+        <svg viewBox="0 0 24 24" aria-hidden="true">
+          <path d="M14.05 21.25v-8.42h2.83l.43-3.28h-3.26V7.46c0-.95.26-1.6 1.63-1.6h1.74V2.93a23.22 23.22 0 0 0-2.54-.13c-2.51 0-4.23 1.53-4.23 4.34v2.41H7.82v3.28h2.83v8.42h3.4Z"/>
+        </svg>
+        <span>Facebook</span>
+      </a>
+    </div>
+    <div class="footer-meta">
+      <span>Molobela Web &amp; Tech</span>
+      <span>Premium website agency</span>
+    </div>
+  </footer>
 
-    <script src="JavaScript/Contact.js" defer></script>
-
-    <script>
-        // Hamburger Menu Toggle with ARIA + keyboard support
-        const hamburger = document.getElementById('hamburger');
-        const navMenu = document.getElementById('navMenu');
-        const navLinks = document.querySelectorAll('.nav-menu a');
-
-        function setMenuState(isOpen) {
-            if (!hamburger) return;
-            hamburger.classList.toggle('active', isOpen);
-            navMenu.classList.toggle('active', isOpen);
-            hamburger.setAttribute('aria-expanded', isOpen ? 'true' : 'false');
-        }
-
-        // Toggle menu on hamburger click
-        hamburger.addEventListener('click', () => {
-            const isOpen = !hamburger.classList.contains('active');
-            setMenuState(isOpen);
-        });
-
-        // Keyboard support (Enter / Space)
-        hamburger.addEventListener('keydown', (e) => {
-            if (e.key === 'Enter' || e.key === ' ') {
-                e.preventDefault();
-                hamburger.click();
-            }
-        });
-
-        // Close menu when a link is clicked
-        navLinks.forEach(link => {
-            link.addEventListener('click', () => setMenuState(false));
-        });
-
-        // Close menu when clicking outside
-        document.addEventListener('click', (event) => {
-            if (!event.target.closest('.navbar')) {
-                setMenuState(false);
-            }
-        });
-    </script>
-
+  <script src="JavaScript/app.js"></script>
 </body>
 </html>
