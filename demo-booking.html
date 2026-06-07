@@ -6,9 +6,37 @@
   <title>Demo Project 03 | Prime Auto Care</title>
   <link rel="icon" type="image/png" href="Favicon/favicon.png">
   <link rel="stylesheet" href="CSS/style.css">
+  <style>
+    .skip-link {
+      position: absolute;
+      left: -9999px;
+      top: auto;
+      width: 1px;
+      height: 1px;
+      overflow: hidden;
+    }
+
+    .skip-link:focus {
+      left: 1rem;
+      top: 1rem;
+      width: auto;
+      height: auto;
+      padding: .75rem 1rem;
+      background: #ffffff;
+      color: #08090b;
+      z-index: 999;
+      border-radius: .5rem;
+    }
+
+    .demo-preview {
+      width: 100%;
+      max-width: 900px;
+      border-radius: 1rem;
+    }
+  </style>
 </head>
 <body>
-  <a href="#main-content">Skip to content</a>
+  <a class="skip-link" href="#main-content">Skip to content</a>
   <header class="site-header">
     <nav aria-label="Demo page navigation">
       <a href="index.html#portfolio">Back to portfolio</a>
@@ -18,7 +46,7 @@
     <p class="eyebrow">Demo Project 03</p>
     <h1>Prime Auto Care</h1>
     <p>This demo showcases a booking-focused website designed to help customers compare packages and request appointments fast.</p>
-    <img src="IMG/portfolio-booking.png" alt="Prime Auto Care demo preview" style="width:100%;max-width:900px;border-radius:1rem;">
+    <img class="demo-preview" src="IMG/portfolio-booking.png" alt="Prime Auto Care demo preview">
     <p><a class="button button-primary" href="index.html#portfolio">Back to portfolio</a></p>
   </main>
   <footer class="site-footer">
